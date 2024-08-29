@@ -1,0 +1,37 @@
+.logo-container {
+  display: flex; /* Aligns items in a row */
+  align-items: center; /* Vertically centers items */
+  justify-content: center; /* Horizontally centers items */
+  gap: 10px; /* Space between the image and text */
+  margin: 20px; /* Adds margin around the container */
+}
+.logo-container img{
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+.logo-image {
+  width: 50px; /* Adjust the size of the logo image */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.logo-text {
+  font-family: '  "Inter", sans-serif' italic;
+  /* font-weight: 400; */
+  font-style: normal; /* Sets the font family */
+  /* font-size: 2rem; Adjusts the font size */
+  font-weight: bold;   
+  color: #333; /* Sets the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+  letter-spacing: 1px; /* Increases the space between letters */
+  line-height: 1.2; /* Adjusts the line height */
+  border-bottom: 3px solid #007BFF; /* Adds a colored line under the text */
+  padding-bottom: 5px; /* Adds space between text and bottom border */
+  transition: color 0.3s ease; 
+  white-space: nowrap;/* Adds a transition effect for color changes */
+}
+
+.logo-text:hover {
+  color: #007BFF; /* Changes text color on hover */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
