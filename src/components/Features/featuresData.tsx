@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
         </style>
         
         {/* PCB background */}
-        <rect className="pcb" width="300" height="300" rx="10" ry="10" />
+        <rect className="pcb" width="300" height="300" rx="10" ry="10"/>
         
         {/* Circuit traces */}
         <path className="traces" d="M 50,50 L 250,50 L 250,250 L 50,250 Z" />
@@ -30,7 +30,7 @@ const featuresData: Feature[] = [
     ),
     title: "PCB Designing/Reverse Engineerings",
     paragraph:
-      "PCB designing shapes the layout and connections of electronic components, essential for modern electronics. Reverse engineering involves analyzing existing boards to replicate or improve their functionality.",
+      "Designing a PCB shapes the layout and connections of electronic parts, which are necessary in contemporary electronics. Reverse engineering entails the study and analysis of an already designed board in order to either replicate or improve its functionality. In this respect, designing a PCB and the process of reverse engineering it",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const featuresData: Feature[] = [
       <svg width='width' height='height' viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-            <stop offset="0%" stopColor="#00FFFF" stopOpacity="0.8"/>
+            <stop offset="0%" stopColor="#00FFFF2323" stopOpacity="0.8"/>
             <stop offset="100%" stopColor="#0000FF" stopOpacity="0.3"/>
           </radialGradient>
         </defs>
@@ -47,8 +47,8 @@ const featuresData: Feature[] = [
         
         {/* Eye */}
         <circle cx="400" cy="250" r="150" fill="url(#eyeGradient)"/>
-        <circle cx="400" cy="250" r="70" fill="#FFFFFF" fillOpacity="0.8"/>
-        <circle cx="400" cy="250" r="35" fill="#0000FF"/>
+        <circle cx="400" cy="250" r="70" fill="#FFFFFFff" fillOpacity="0.8"/>
+        <circle cx="400" cy="250" r="35" fill="#0000FFff"/>
         
         {/* Hexagons */}
         {[
@@ -64,7 +64,7 @@ const featuresData: Feature[] = [
           <g key={index}>
             <path d={`M${hex[0]},${hex[1]} l40,-25 l40,25 v50 l-40,25 l-40,-25 z`} 
                   fill="none" stroke="#00FFFF" strokeWidth="2"/>
-            <text x='hex[0] + 40' y='hex[1] + 35' fill="#FFFFFF" fontSize="12" textAnchor="middle">{hex[2]}</text>
+            <text x='hex[0] + 40' y='hex[1] + 35' fill="#FFFFFF2333" fontSize="12" textAnchor="middle">{hex[2]}</text>
           </g>
         ))}
         
@@ -79,7 +79,7 @@ const featuresData: Feature[] = [
     ),
     title: "Computer Vision",
     paragraph:
-      "Computer vision enables computers to interpret and understand visual information from the world, such as images and videos. By leveraging algorithms and machine learning, it empowers applications like facial recognition, autonomous vehicles, and image analysis.",
+      "Sighting into the ability of a computer to interpret and understand visual information in images or videos, computer vision can be made possible through leveraging algorithms and machine learning in applications ranging from facial recognition, autonomous vehicles, and image analysis.",
   },
   {
     id: 3,
@@ -110,7 +110,7 @@ const featuresData: Feature[] = [
     ),
     title: "IoT",
     paragraph:
-      "IoT, or Internet of Things, connects everyday devices to the internet, allowing them to send and receive data. It transforms ordinary objects into smart devices that can be monitored and controlled remotely. IoT enhances convenience and efficiency in our daily lives by integrating technology seamlessly into various aspects.",
+      "IoT, or the Internet of Things, merely denotes the connectivity of normal devices to the Internet for gathering and sending data. IoT applies smart device technology to ordinary devices, enabling them to monitor and control items remotely. The application of seamless integration of technology into everyday life contributes a great deal to conveniences and efficiencies.",
   },
   {
     id: 4,
@@ -134,7 +134,7 @@ const featuresData: Feature[] = [
     ),
     title: "Machine Learning",
     paragraph:
-      "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It uses algorithms to analyze data, identify patterns, and make predictions or decisions based on that data. This technology is transforming industries by enabling smarter automation and advanced data insights.",
+      "It is a part of artificial intelligence, whereby it grants the system the ability to learn and improve from experience without explicit programming. In general, machine learning uses algorithms to analyze data, identify patterns, and make predictions or decisions based on that data. This technology is transformative for many industries with its power in driving smarter automation and advanced data insights.",
   },
   {
     id: 5,
@@ -155,7 +155,7 @@ const featuresData: Feature[] = [
     ),
     title: "Robotics",
     paragraph:
-      "Robotics integrates various technologies to create machines capable of performing tasks autonomously. It combines mechanical engineering, electronics, and computer science to develop robots that can assist or replace human effort in various fields. This rapidly evolving field is transforming industries from manufacturing to healthcare.",
+      "It is all about putting different technologies together where a machine could be achieved that might perform the task independently, sans interference from human beings. It melds the three disciplines of mechanical engineering, electronics, and computer science in the design of robots to help or replace human effort. It is one of the evolving areas which are continuously changing from manufacturing industries to health care.",
   },
   {
     id: 6,
@@ -169,7 +169,7 @@ const featuresData: Feature[] = [
     ),
     title: "Web Development",
     paragraph:
-      "Web development involves designing and building websites and web applications. It encompasses front-end development (creating the visual aspects of a website) and back-end development (handling server-side logic and databases). Key technologies include HTML, CSS, and JavaScript for the front end, and languages like Python, Ruby, or Node.js for the back end. .",
+      "Web development is the activity related to designing and building websites and web applications. It involves not only the creation of the visual parts of a website, made possible by front-end development, but also back-end development, which is responsible for the server-side logic and databases. Key technologies: HTML, CSS, and JavaScript on the front end; languages like Python, Ruby, or Node.js on the back end.",
   },
 ];
 

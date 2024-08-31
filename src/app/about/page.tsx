@@ -15,7 +15,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="At 3Engineers, we're dedicated to turning innovative ideas into reality with a commitment to excellence and creativity. Our team of experts delivers tailored solutions ensuring each project reflects our core values of integrity and collaboration. We leverage cutting-edge technology to drive progress and make a meaningful impact. Join us as we shape the future and achieve remarkable success together.."
+        description="At 3Engineers, we transform cutting-edge ideas into reality, committed to excellence and ingenuity. Our professional staff offers tailor-made solutions, ensuring that every project meets our core values of integrity and collaboration. We harness superior technology for progress and a mark of impact. Be our partner and shape the future with us to create phenomenal success."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

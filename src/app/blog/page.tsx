@@ -15,7 +15,7 @@ const Blog = () => {
     <>
       <Breadcrumb
         pageName="Course Grid"
-        description="Explore a diverse range of computer science courses designed to equip you with the essential skills and knowledge needed in today's tech-driven world. From foundational programming to advanced data science, our curriculum offers something for everyone. Whether you're a beginner starting your journey or a seasoned professional looking to expand your expertise, our courses provide hands-on experience with the latest tools and technologies. Join us to learn from industry experts, engage in practical projects, and prepare yourself for a successful career in the ever-evolving field of computer science. Discover your potential with our comprehensive course offerings today!.."
+        description="From the basics of programming to advanced data science, explore the gamut of computer science courses and equip yourself with the professional skills that you will need in the current context. In our curriculum, we have courses to suit every level of expertise. Learn from industry experts, work through projects, and take your career forward using state-of-the-art tools and technologies. Unleash your inner potential and gear up for success with the help of our diverse course offerings."
       />
 
       <section className="pb-[120px] pt-[120px]">

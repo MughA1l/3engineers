@@ -10,8 +10,8 @@ const Blog = () => {
     >
       <div className="container">
         <SectionTitle
-          title="Our Latest Blogs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Our Latest Courses"
+          paragraph="Check out our newest classes that'll give you skills employers want. Learn Web Development to make websites that are lively and work well with users. Or get good at PCD Designing to create eye-catching visual designs. Our Computer Vision class teaches you the latest ways to look at and understand visual information getting you ready for high-level tech jobs."
           center
         />
 

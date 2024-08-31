@@ -5,8 +5,8 @@ const brandsData: Brand[] = [
     id: 6,
     name: "Formbold",
     href: "https://formbold.com",
-    image: "/images/brands/pdc_nust_logo_light.jpg ",
-    imageLight: "/images/brands/nustpdcdark.png",
+    image: "/images/brands/nustpdc1 (2).png",
+    imageLight: "/images/brands/nustpdc1 (2).png",
   },
   {
     id: 1,

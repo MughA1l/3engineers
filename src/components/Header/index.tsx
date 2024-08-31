@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import '../Header/header.css'
 
 const Header = () => {
   // Navbar toggle
@@ -41,6 +40,34 @@ const Header = () => {
 
   return (
     <>
+      {/* <style jsx>{`
+        .nav-link {
+          position: relative;
+          transition: all 0.3s ease;
+        }
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -2px;
+          left: 0;
+          background-color: red;
+          transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+          width: 100%;
+          border-bottom:2px solid red;
+        }
+        .nav-link:hover {
+          color: blue;
+          border-bottom:2px solid red;
+        }
+        :global(.dark) .nav-link:hover {
+          color: blue;
+        }
+      `}</style> */}
+
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
@@ -57,26 +84,15 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-             <div className="logo-container">
-             
-                  <h1 className="logo-text  dark:text-white  text-4xl " style={{fontFamily: '"Whisper", cursive',
-                        fontWeight: '400',
-                         fontStyle:' normal'}}>
-                          
-                         3Engineers
+                <div className="logo-container">
+                  <h1 className="logo-text dark:text-white text-3xl ml-6" style={{
+                    fontFamily: '"Whisper", cursive',
+                    fontWeight: '400',
+                    fontStyle: 'normal'
+                  }}>
+                    3Engineers
                   </h1>
-                  </div>
-                {/* <Image
-                  src="/images/logo/bird-colorful-logo-gradient-vector_343694-1365.avif"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"style={{
-                    borderRadius:'50%',
-                    width:'60%',
-                    height:'20%'
-                  }}
-                /> */}
+                </div>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -111,16 +127,16 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12 ml-16">
+                  <ul className="block lg:flex lg:space-x-12 ml-16 ">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
+                      <li key={index} className="group relative nav-link">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`nav-link flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                : "text-dark dark:text-white/70 dark:hover:text-blue-500"
                             }`}
                           >
                             {menuItem.title}
@@ -129,7 +145,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="nav-link flex cursor-pointer items-center justify-between py-2 text-base text-dark dark:text-white/70 dark:group-hover:text-blue-500 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -166,19 +182,14 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link> */}
                 <Link
                   href="/contact"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-orange-500 px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9" style={{
-                    borderRadius:'30px'
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-blue-500 px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
+                  style={{
+                    borderRadius: '30px'
                   }}
                 >
-                  Contect us
+                  Contact us
                 </Link>
                 <div>
                   <ThemeToggler />

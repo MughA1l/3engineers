@@ -9,9 +9,12 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
+        
+          
             title= "Our Services"
-            paragraph="Explore our coding language services and unlock the power of programming. We offer comprehensive training in various languages, tailored to meet your needs, from beginner basics to advanced techniques. Our goal is to equip you with the skills to excel in your coding journey and turn your ideas into reality.."
+            paragraph="Research our coding language services and unlock the power of programming. We will train you in everything from the basics for beginners up to advanced skills in a number of languages to suit your needs. The goal will be to provide you with the tools you need to succeed on your journey into coding and bring your idea into reality." 
             center
+            
             
           />
 
